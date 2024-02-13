@@ -14,6 +14,7 @@
     justify-content: end;
     transition: 0.25s ease-in-out;
     z-index: 9;
+    overflow: hidden;
 }
 .menu.active{
     transform: translateX(0%);

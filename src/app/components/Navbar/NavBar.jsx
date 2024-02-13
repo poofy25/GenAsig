@@ -26,16 +26,16 @@ function NavBar() {
 
     return ( 
         <nav className={`${styles.none}  ${styles.nav}`}>
-            <a href='/acasa' className={styles.logoBar}><Image alt='Logo' src={logo}/></a>
+            <a href='/' className={styles.logoBar}><Image alt='Logo' src={logo}/></a>
             <section className={styles.navigationBar}>
-                <a  href="/acasa" style={{marginLeft:'auto'}}>Acasă</a>
-                <a  href="/blog">Blog</a>
+                <a  href="/" style={{marginLeft:'auto'}}>Acasă</a>
+                <a  href="/asigurari">Asigurări</a>
                 <a  href="/contact">Contact</a>
 
             
                 <section className={styles.contactBar}>
                     <div>
-                    <a href='tel:+37369374873'>+373 69 374 873</a>
+                    <a href='tel:+37361121115'>+373 61 121 115</a>
                     </div>
                     <span></span>
 

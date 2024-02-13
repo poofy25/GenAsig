@@ -1,0 +1,108 @@
+@use '/src/app/styles/_variables.scss' as v;
+
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: v.$secondaryColor;
+
+}
+
+.content{
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    padding-inline: 10%;
+    padding-block: 2rem;
+    box-sizing: border-box;
+}
+.content > article {
+    display: flex;
+    flex-direction: column;
+}
+.content > article > h3 {
+    color: v.$primaryColor;
+}
+.content > article > p {
+    font-size: 1rem;
+    margin: 0;
+    line-height: 18px;
+    margin-bottom: 0.5rem;
+    color: v.$white;
+
+}
+.content > article > a {
+    margin: 0;
+    line-height: 18px;
+    margin-bottom: 0.5rem; 
+    text-decoration: none;
+    color: v.$white;
+    transition: 0.25s ease-in-out;
+    cursor: pointer;
+}
+.content > article > a:hover {
+  color: v.$primaryColor;
+}
+.logo > img {
+    width: 10rem;
+    height: auto;
+}
+.social > img {
+    width: 3rem;
+    height: auto;
+}
+
+.bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 7.5vw;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+    width: 100%;
+    color: v.$white;
+}
+.bottom > a {
+    color:  v.$white;
+    text-decoration: none;
+}
+
+
+@media only screen and (min-width: 0px) and (max-width:640px) {
+    .content{
+        flex-direction: column;
+    }
+    .content > article {
+        display: flex;
+        flex-direction: column;
+    }
+    .bottom {
+        flex-direction: column;
+        
+    }
+
+}
+ @media only screen and (min-width: 640px) and (max-width:992px){
+    .content{
+        flex-direction: column;
+    }
+    .content > article {
+        display: flex;
+        flex-direction: column;
+    }
+    .bottom {
+        flex-direction: column;
+        
+    }
+}
+    
+@media only screen and (min-width: 992px) and (max-width:1200px) {
+    
+}
+@media only screen and (min-width: 1200px) {
+    
+}
