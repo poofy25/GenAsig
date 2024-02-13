@@ -1,0 +1,74 @@
+@use '/src/app/styles/_variables.scss' as v;
+
+
+html , body , #root{
+  margin: 0;
+  font-family: 'Playfair Display' , sans-serif;
+  background-color: #f7f7f7;
+  scroll-behavior: smooth;
+  color: v.$textColor;
+}
+h1{
+  font-size: 5rem;
+  margin-block: 1rem;
+}
+h2{
+  font-size: 3rem;
+  margin-block: 1rem;
+}
+h3{
+  font-size: 1.5rem;
+}
+p{
+  font-size: 1rem;
+}
+a{
+  text-decoration: none;
+  color: v.$textColor;
+}
+
+
+.section{
+  background-color: v.$secondaryColor;
+  padding-inline: 7.5vw;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.roundBtn{
+  background-color: v.$primaryColor;
+  padding: 1rem 2rem 1rem 2rem;
+  border-radius: 999px;
+  transition: 0.25s;
+}
+.roundBtn:hover {
+  filter: brightness(120%);
+}
+
+
+
+
+@media only screen and (min-width: 0px) and (max-width:640px) {
+  h1{
+      font-size: 3.5rem;
+  }
+  h2{
+      font-size: 1.75rem;
+  }
+  h3{
+      font-size: 1.25rem;
+  }
+  p{
+      font-size: 1.1rem;
+      line-height: 2rem;
+  }
+}
+@media only screen and (min-width: 640px) and (max-width:992px){
+}
+  
+@media only screen and (min-width: 992px) and (max-width:1200px) {
+  
+}
+@media only screen and (min-width: 1200px) {
+  
+}

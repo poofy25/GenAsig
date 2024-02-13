@@ -1,0 +1,81 @@
+.hero{
+    padding-block: 80px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+.hero > section {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 1;
+}
+.hero > section > p {
+    opacity: 0.75;
+    font-size: 1.25rem;
+    z-index: 1;
+
+}
+.btn{
+    margin-top: 1rem;
+    width: fit-content;
+    z-index: 1;
+}
+
+.bgSvg{
+    position: absolute;
+    width: 60%;
+    right: 0;
+    aspect-ratio: 1;
+    z-index: -1;
+}
+.bgSvg > img {
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.animatedSvg{
+    width:250px !important;
+    height: 250px !important;
+}
+
+
+
+
+@media only screen and (min-width: 0px) and (max-width:640px) {
+    .hero {
+        flex-direction: column;
+    }
+    .hero > section {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+    .bgSvg{
+        width: 150%;
+        top: 20%;
+        right: unset;
+    }
+    .bgSvg > img {
+        width: 100%;
+        height: 100%;
+    }
+    .animatedSvg{
+        width:150px !important;
+        height: 150px !important;
+    }
+    
+  }
+  @media only screen and (min-width: 640px) and (max-width:992px){
+  }
+    
+  @media only screen and (min-width: 992px) and (max-width:1200px) {
+    
+  }
+  @media only screen and (min-width: 1200px) {
+    
+  }

@@ -1,0 +1,114 @@
+@use '/src/app/styles/_variables.scss' as v;
+
+
+
+.asig{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-block: 80px;
+}
+.asig > p {
+    opacity: 0.75;
+    margin-bottom: 3rem;
+}
+.asigsSection {
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.asigsSection > a{
+    display: flex;
+    width: 24%;
+    margin-inline: 0.5%;
+    flex-direction: column;
+    align-items: start;
+    padding: 1.5rem;
+    box-sizing: border-box;
+    text-align: start;
+    border-radius: 16px;
+    margin-bottom: 2rem;
+}
+.asigsSection > a > img {
+    height:50px;
+    width: auto;
+    margin-bottom: 20px;
+}
+.asigsSection > a > h3 {
+    margin: 0;
+}
+.asigsSection > a > p {
+    margin-block: 0.5rem;
+    margin-bottom: 1rem;
+    opacity: 0.75;
+}
+.asigsSection > a > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: v.$primaryColor;
+    font-weight: bold;
+}
+.asigsSection > a > a > img {
+    width: 1.5rem;
+    aspect-ratio: 1;
+    filter: invert(71%) sepia(9%) saturate(1314%) hue-rotate(359deg) brightness(89%) contrast(88%);
+}
+
+.asigsSection > a:nth-child(1){
+    background: rgb(255,22,22);
+    background: linear-gradient(10deg, rgba(138, 97, 97, 0.5) 20%, #111111 100%);
+}
+.asigsSection > a:nth-child(2){
+    background: rgb(255,22,22);
+    background: linear-gradient(10deg, rgba(138, 116, 97, 0.5) 20%, #111111 100%);
+}
+.asigsSection > a:nth-child(3){
+    background: rgb(255,22,22);
+    background: linear-gradient(10deg, rgba(130, 138, 97, 0.5) 20%, #111111 100%);
+}
+.asigsSection > a:nth-child(4){
+    background: rgb(255,22,22);
+    background: linear-gradient(10deg, rgba(97, 138, 108, 0.5) 20%, #111111 100%);
+}
+.asigsSection > a:nth-child(5){
+    background: rgb(255,22,22);
+    background: linear-gradient(10deg, rgba(97, 122, 138, 0.5) 20%, #111111 100%);
+}
+.asigsSection > a:nth-child(6){
+    background: rgb(255,22,22);
+    background: linear-gradient(10deg, rgba(116, 97, 138, 0.5) 20%, #111111 100%);
+}
+.asigsSection > a:nth-child(7){
+    background: rgb(255,22,22);
+    background: linear-gradient(10deg, rgba(138, 97, 132, 0.5) 20%, #111111 100%);
+}
+
+
+
+
+
+@media only screen and (min-width: 0px) and (max-width:640px) {
+    .asigsSection {
+        flex-direction: column;
+    }
+    .asigsSection > a{
+        width: 100%;
+    }
+    .asig{
+        padding-block: 32px;
+    }
+}
+@media only screen and (min-width: 640px) and (max-width:992px){
+}
+    
+@media only screen and (min-width: 992px) and (max-width:1200px) {
+    
+}
+@media only screen and (min-width: 1200px) {
+    
+}

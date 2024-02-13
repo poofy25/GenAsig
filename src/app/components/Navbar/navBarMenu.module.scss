@@ -1,0 +1,103 @@
+@use '/src/app/styles/_variables.scss' as v;
+
+
+.menu {
+    width: 100%;
+    position: fixed;
+    height: 100%;
+    transform: translateX(100%);
+    background-color: rgba(0,0,0,0.5);
+    right: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    transition: 0.25s ease-in-out;
+    z-index: 9;
+}
+.menu.active{
+    transform: translateX(0%);
+}
+.menuContent {
+    width: 300px;
+    height: 100%;
+    background-color: #f7f7f7;
+    padding-top: calc(5rem - 1px);
+    box-sizing: border-box;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.menuContent > a {
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 1rem;
+    border-top: 1px solid rgba(0,0,0,0.25);
+    padding-left: 25px;
+    color: #1E1C1C;
+    text-decoration: none;
+    background-color: v.$white;
+    transition: 0.25s ease-in-out;
+}
+.menuContent > a:hover{
+    background-color: v.$secondaryColor;
+    color: v.$white;
+}
+.lasta{
+    border-bottom: 1px solid rgba(0,0,0,0.25);
+}
+.menuContent > span {
+    font-size: 1rem;
+    font-weight: 700;
+    display: flex;
+    padding: 0.5rem;
+    padding-left: 25px;
+    box-sizing: border-box;
+    align-items: center;
+}
+.menuContent > span > a {
+    color: #1E1C1C;
+    text-decoration: none;
+}
+.menuContent > span:hover{
+    color: #4F7FBE;
+}
+.menuContent > span > img {
+    width: 1.5rem;
+    margin-right: 1rem;
+    filter: invert(47%) sepia(53%) saturate(468%) hue-rotate(174deg) brightness(90%) contrast(96%);
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+
+.menuContent > h3 {
+    margin-block: 0rem ;
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+
+
+.social{
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.social > img{
+    width: 2rem;
+    margin-right: 1rem;
+    filter: invert(47%) sepia(53%) saturate(468%) hue-rotate(174deg) brightness(90%) contrast(96%);
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+
+

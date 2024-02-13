@@ -1,0 +1,207 @@
+
+
+@use '/src/app/styles/_variables.scss' as v;
+
+.nav{
+    height: 80px;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+}
+
+
+
+.logoBar {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    z-index: 3;
+    margin-left: 7.5vw;
+}
+.logoBar > img{
+    height: 90%;
+    width: auto;
+}
+
+
+
+
+
+
+
+.navigationBar {
+    flex: 1;
+    color: #1E1C1C;
+    box-sizing: border-box;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.navigationBar > a {
+    height: 100%;
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: 700;
+    color: v.$textColor;
+    text-decoration: none;
+    transition: 0.25s ease-in-out;
+    font-weight: 600;
+}
+.navigationBar > a:hover{
+    opacity: 0.5;
+}
+.navigationBar > a:first-child{
+    margin-left: 0;
+}
+.navigationBar > a:last-child{
+    margin-right: 0;
+}
+
+.contactBar{
+    
+    height: 100%;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    margin-right: 7.5vw;
+    box-sizing: border-box;
+    margin-left: auto;
+}
+.contactBar > div {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.contactBar > div > a {
+    text-decoration: none;
+    color: v.$primaryColor;
+    font-weight: bold;
+    transition: 0.25s ease-in-out;
+    font-size: 1rem;
+}
+.contactBar > div > a:hover {
+    // opacity: 0.75;
+    filter: brightness(120%);
+
+}
+.contactBar > span {
+    width: 1px;
+    height: 50%;
+    background-color: v.$textColor;
+    opacity: 0.5;
+    margin-inline: 1.5rem;
+}
+.contactBar > a {
+    text-decoration: none;
+    color: v.$textColor;
+    transition: 0.25s ease-in-out;
+    font-size: 1rem;
+
+}
+.contactBar > a:hover {
+    filter: brightness(120%);
+}
+
+
+
+
+
+
+
+
+.menuBtn {
+    height: 75%;
+    aspect-ratio: 1;
+    margin: 0;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: transparent;
+    border: none;
+    z-index: 999;
+}
+.menuBtn > div {
+    width: 100%;
+    height: 2px;
+    background-color: v.$white;
+    border-radius: 999px;
+}
+.menuBtn > div.active {
+    background-color: v.$black;
+}
+
+@media only screen and (min-width: 0px) and (max-width:640px) {
+
+    nav > .logoBar > img {
+       height: 75%;
+    }
+    
+    .logoBar {
+        width: auto;
+        padding-left: 7.5vw;
+        margin: 0;
+    }
+    .navigationBar {
+        padding-left: 0;
+        padding-right: 7.5vw;
+    }
+    .navigationBar > a {
+        display: none;
+    }
+ 
+    
+}
+@media only screen and (min-width: 640px) and (max-width:992px) {
+
+   
+    nav > .logoBar > img {
+        height: 50%;
+    }
+    nav > .logoBar::before{
+        border-bottom: 5rem solid v.$secondaryColor;
+    }
+    .logoBar {
+        width: 40%;
+        padding-right: 25px;
+    }
+    .navigationBar {
+        padding-left: calc(40% + 25px);
+        padding-right: 25px;
+
+    }
+    .navigationBar > a {
+        display: none;
+    }
+
+
+}
+
+@media only screen and (min-width: 992px) and (max-width:1200px) {
+
+    nav > .logoBar > img {
+        height: 50%;
+    }
+    nav > .logoBar::before{
+        border-bottom: 5rem solid v.$secondaryColor;
+    }
+
+
+}
+
