@@ -136,6 +136,7 @@
     background-color: transparent;
     border: none;
     z-index: 999;
+    display: none;
 }
 .menuBtn > div {
     width: 100%;
@@ -165,7 +166,12 @@
     .navigationBar > a {
         display: none;
     }
- 
+    .contactBar {
+        display: none;
+    }
+    .menuBtn {
+        display: flex;
+    }
     
 }
 @media only screen and (min-width: 640px) and (max-width:992px) {
@@ -189,7 +195,12 @@
     .navigationBar > a {
         display: none;
     }
-
+    .contactBar {
+        display: none;
+    }
+    .menuBtn {
+        display: flex;
+    }
 
 }
 
@@ -201,7 +212,7 @@
     nav > .logoBar::before{
         border-bottom: 5rem solid v.$secondaryColor;
     }
-
+    
 
 }
 

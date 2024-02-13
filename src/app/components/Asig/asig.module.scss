@@ -46,14 +46,14 @@
     margin-bottom: 1rem;
     opacity: 0.75;
 }
-.asigsSection > a > a {
+.asigsSection > a > span {
     display: flex;
     align-items: center;
     justify-content: center;
     color: v.$primaryColor;
     font-weight: bold;
 }
-.asigsSection > a > a > img {
+.asigsSection > a > span > img {
     width: 1.5rem;
     aspect-ratio: 1;
     filter: invert(71%) sepia(9%) saturate(1314%) hue-rotate(359deg) brightness(89%) contrast(88%);

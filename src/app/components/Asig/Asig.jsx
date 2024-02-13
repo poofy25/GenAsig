@@ -22,43 +22,43 @@ function Asig() {
                     <Image src={medicala} width='200' height='200'/>
                     <h3>Medicală peste hotare</h3>
                     <p>Pentru rezidenți, valabilă peste hotare.</p>
-                    <a>Comandă <Image src={navIcon}/> </a>
+                    <span>Comandă <Image src={navIcon}/> </span>
                 </a>
                 <a href='/asigurari/ipoteca'>
                     <Image src={ipoteca} width='200' height='200'/>
                     <h3>Ipotecă</h3>
                     <p>Pentru ipotecă și bunuri imobile gajate.</p>
-                    <a>Comandă <Image src={navIcon}/> </a>
+                    <span>Comandă <Image src={navIcon}/> </span>
                 </a>
                 <a href='/asigurari/carte-verde'>
                     <Image src={carteverde} width='100' height='100'/>
                     <h3>Carte Verde</h3>
                     <p>Pentru vehicule înmatriculate în Moldova, valabilă peste hotare.</p>
-                    <a>Comandă <Image src={navIcon}/> </a>
+                    <span>Comandă <Image src={navIcon}/> </span>
                 </a>
                 <a href='/asigurari/accidente'>
                     <Image src={accidente} width='200' height='200'/>
                     <h3>Accidente</h3>
                     <p>Siguranță financiară în cazul unor evenimente neașteptate.</p>
-                    <a>Comandă <Image src={navIcon}/> </a>
+                    <span>Comandă <Image src={navIcon}/> </span>
                 </a>
                 <a href='/asigurari/casco'>
                     <Image src={casco} width='200' height='200'/>
                     <h3>Casco</h3>
                     <p>Protecție completă pentru vehiculul tău împotriva daunelor.</p>
-                    <a>Comandă <Image src={navIcon}/> </a>
+                    <span>Comandă <Image src={navIcon}/> </span>
                 </a>
                 <a href='/asigurari/vinieta'>
                     <Image src={vinieta} width='200' height='200'/>
                     <h3>Vinietă</h3>
                     <p>Acoperire pentru taxele de drum, asigurându-ți conformitatea legală.</p>
-                    <a>Comandă <Image src={navIcon}/> </a>
+                    <span>Comandă <Image src={navIcon}/> </span>
                 </a>
                 <a href='/asigurari/rca'>
                     <Image src={rca} width='200' height='200'/>
                     <h3>RCA</h3>
                     <p>Pentru vehicule înmatriculate în Moldova.</p>
-                    <a>Comandă <Image src={navIcon}/> </a>
+                    <span>Comandă <Image src={navIcon}/> </span>
                 </a>
                 
                 

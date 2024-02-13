@@ -17,7 +17,6 @@ function NavBar() {
 
 
     const [menuActive , setMenuActive] = useState(false)
-    const width = window.innerWidth
 
     const menuBtnHandler = ()=>{
         setMenuActive(!menuActive)
@@ -33,28 +32,25 @@ function NavBar() {
                 <a  href="/blog">Blog</a>
                 <a  href="/contact">Contact</a>
 
-                {width > 992 ? 
-                <>
-                   <section className={styles.contactBar}>
-                <div>
-                  <a href='tel:+37369374873'>+373 69 374 873</a>
-                </div>
-                <span></span>
+            
+                <section className={styles.contactBar}>
+                    <div>
+                    <a href='tel:+37369374873'>+373 69 374 873</a>
+                    </div>
+                    <span></span>
 
-                <a href='/asigurari' className={`roundBtn`} >Comandă acum</a>
+                    <a href='/asigurari' className={`roundBtn`} >Comandă acum</a>
 
                 </section>
-                </>
-                :
-                <>
+                
+            
                 <button aria-label='Menu' onClick={menuBtnHandler} className={styles.menuBtn}>
                     <div className={menuActive && styles.active}></div>
                     <div className={menuActive && styles.active}></div>
                     <div className={menuActive && styles.active}></div>
                 </button>
                 
-                </>
-                }
+            
                 
             </section>
             
