@@ -1,11 +1,27 @@
 
+import AsigurariForm from "./asigurariForm";
 
+import styles from './page.module.scss'
 
-export default function Home({params}) {
-    console.log(params)
+import Image from "next/image";
+
+import { asigData } from "./asigurariData";
+
+export default function Asigurare({params}) {
+
+  const currentAsig = asigData[params.id]
+  console.log(currentAsig)
   return (
-    <main>
-        {params.id}
-    </main>
+    <section className={styles.asigurarePage}>
+        <article className={styles.asigurareHeader}
+        style={{
+          background: `linear-gradient(10deg, ${currentAsig.color} 20%, #111111 100%)`}}
+        >
+          <Image src={currentAsig?.imgPath} width='300' height='300'/>
+          <h2>{currentAsig?.name}</h2>
+          <p>{currentAsig?.description}</p>
+        </article>
+        <AsigurariForm/>
+    </section>
   );
 }
