@@ -1,5 +1,5 @@
 
-import AsigurariForm from "./asigurariForm";
+import AsigurariForm from "./AsigurariForm";
 
 import styles from './page.module.scss'
 
