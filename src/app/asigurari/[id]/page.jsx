@@ -21,7 +21,7 @@ export default function Asigurare({params}) {
           <h2>{currentAsig?.name}</h2>
           <p>{currentAsig?.description}</p>
         </article>
-        <AsigurariForm/>
+        <AsigurariForm type={currentAsig?.name}/>
     </section>
   );
 }

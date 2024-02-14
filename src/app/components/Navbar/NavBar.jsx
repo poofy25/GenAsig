@@ -39,7 +39,7 @@ function NavBar() {
                     </div>
                     <span></span>
 
-                    <a href='/asigurari' className={`roundBtn`} >Comandă acum</a>
+                    <a href='/asigurari' className={`roundBtn btnTransition`} >Comandă acum</a>
 
                 </section>
                 

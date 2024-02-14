@@ -14,7 +14,7 @@ function Hero() {
                 <h1>Asigurări</h1>
                 <h2>Simplu. Rapid. Online.</h2>
                 <p>Primul service complet digital din Republica Moldova. Asigurările online sunt emise instant și semnate electronic</p>
-                <a href='/asigurari' className={`${styles.btn} roundBtn`} >Comandă acum</a>
+                <a href='/asigurari' className={`${styles.btn} btnTransition roundBtn`} >Comandă acum</a>
             </section>
             <section style={{alignItems:'center', flex:'1'}}>
             <lord-icon

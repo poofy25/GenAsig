@@ -42,7 +42,28 @@ a{
   transition: 0.25s;
 }
 .roundBtn:hover {
-  filter: brightness(120%);
+  filter: brightness(110%);
+}
+
+.btnTransition{
+  position: relative;
+  overflow: hidden;
+}
+.btnTransition::before{
+  content: '';
+  width: 150%;
+  height: 100%;
+  background-color: #9e7f50;
+  position: absolute;
+  top: 0;
+  right: 100%;
+  transition: 0.5s ease-in-out;
+  z-index: -1;
+  transform: skew(-20deg);
+  box-sizing: border-box;
+}
+.btnTransition:hover::before {
+  right: -25%;
 }
 
 

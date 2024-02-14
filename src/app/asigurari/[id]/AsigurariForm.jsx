@@ -1,13 +1,15 @@
 'use client'
 
+import { useState } from 'react'
 import styles from './asigurariForm.module.scss'
-export default function AsigurariForm ()  {
+export default function AsigurariForm ({type})  {
 
-
+    const [formType, setFormType] = useState(type)    
+        console.log(formType)
     return (
         <>
             <form className={styles.form}>
-            <div className={styles.formHeader}><p>Trimite cerere</p></div>
+                <div className={styles.formHeader}><p>Trimite {formType==="Contact" ? "contactul tău" : "cerere"}</p></div>
 
                 <label >Nume, Prenume</label>
                 <input placeholder='Nume | Prenume' type="text" required/>
@@ -18,7 +20,7 @@ export default function AsigurariForm ()  {
                 <label>Email</label>
                 <input placeholder='Adresa Email' type="email"/>
 
-                <button type='submit'>Trimite cerere</button>
+                <button className='btnTransition roundBtn' type='submit'>Trimite {formType==="Contact" ? "contact" : "cerere"}</button>
             </form>
         </>
     )
