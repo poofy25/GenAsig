@@ -34,3 +34,32 @@ top: -5rem;
 .asigurareHeader > p {
     opacity: 0.75;
 }
+
+
+@media only screen and (min-width: 0px) and (max-width:640px) {
+    .asigurarePage {
+        justify-content: start;
+    }
+    .asigurareHeader {
+        width: 100%;
+        padding-inline: 1rem;
+        padding-bottom: 0.5rem;
+        padding-top: 2.5rem;
+        margin-top: 2.5rem;
+    }
+    .asigurareHeader > img{
+        height: 5rem;
+        top: -2.5rem;
+    }
+
+}
+ @media only screen and (min-width: 640px) and (max-width:992px){
+    
+}
+    
+@media only screen and (min-width: 992px) and (max-width:1200px) {
+    
+}
+@media only screen and (min-width: 1200px) {
+    
+}

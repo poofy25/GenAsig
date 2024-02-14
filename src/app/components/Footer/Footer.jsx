@@ -34,10 +34,10 @@ function Footer() {
                 </article>
                 <article>
                     <h3>URMAREȘTE-NE</h3>
-                    <a href='/' alt='Logo' className={styles.logo}><Image width='100' height='100' alt='Logo' src={logo}/></a>
+                    <a href='/' alt='Logo' className={styles.logo}><Image width='300' height='300' alt='Logo' src={logo}/></a>
                     <h3>SUNTEM ÎN REȚELELE SOCIALE</h3>
                     <span>
-                        <a  target='_blank' href='https://www.instagram.com/finanko.md/' className={styles.social}><Image width='100' height='100'  alt='Instagram Logo' src={instagram}/></a>
+                        <a  target='_blank' href='https://www.instagram.com/gen.asig/' className={styles.social}><Image width='100' height='100'  alt='Instagram Logo' src={instagram}/></a>
                     </span>
                 </article>
             </section>
