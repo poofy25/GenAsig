@@ -22,7 +22,7 @@
 .menuContent {
     width: 300px;
     height: 100%;
-    background-color: #f7f7f7;
+    background-color: v.$secondaryColor;
     padding-top: calc(5rem - 1px);
     box-sizing: border-box;
     display: flex;
@@ -37,11 +37,11 @@
     font-size: 1rem;
     font-weight: 500;
     padding: 1rem;
-    border-top: 1px solid rgba(0,0,0,0.25);
+    border-top: 1px solid rgba(255,255,255,0.25);
     padding-left: 25px;
-    color: #1E1C1C;
+    color: v.$textColor;
     text-decoration: none;
-    background-color: v.$white;
+    background-color: v.$secondaryColor;
     transition: 0.25s ease-in-out;
 }
 .menuContent > a:hover{
@@ -49,7 +49,7 @@
     color: v.$white;
 }
 .lasta{
-    border-bottom: 1px solid rgba(0,0,0,0.25);
+    border-bottom: 1px solid rgba(255,255,255,0.25);
 }
 .menuContent > span {
     font-size: 1rem;
@@ -74,31 +74,9 @@
     aspect-ratio: 1;
     object-fit: cover;
 }
-
-.menuContent > h3 {
-    margin-block: 0rem ;
-    width: 100%;
-    text-align: center;
-    font-size: 1rem;
-    margin-top: 1rem;
-}
-
-
-
-.social{
-    width: 100%;
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
-.social > img{
-    width: 2rem;
-    margin-right: 1rem;
-    filter: invert(47%) sepia(53%) saturate(468%) hue-rotate(174deg) brightness(90%) contrast(96%);
-    aspect-ratio: 1;
-    object-fit: cover;
+.notA{
+    border: none !important;
+    color: v.$primaryColor !important;
 }
 
 

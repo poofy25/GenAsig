@@ -26,20 +26,20 @@ function NavBar() {
 
     return ( 
         <nav className={`${styles.none}  ${styles.nav}`}>
-            <a href='/' className={styles.logoBar}><Image alt='Logo' src={logo}/></a>
+            <a title='Pagina Principala' href='/' className={styles.logoBar}><Image alt='Logo' src={logo}/></a>
             <section className={styles.navigationBar}>
-                <a  href="/" style={{marginLeft:'auto'}}>Acasă</a>
-                <a  href="/asigurari">Asigurări</a>
-                <a  href="/contact">Contact</a>
+                <a title='Pagina Principala'  href="/" style={{marginLeft:'auto'}}>Acasă</a>
+                <a title='Asigurări' href="/asigurari">Asigurări</a>
+                <a title='Contacte'  href="/contact">Contact</a>
 
             
                 <section className={styles.contactBar}>
                     <div>
-                    <a href='tel:+37361121115'>+373 61 121 115</a>
+                    <a title='Telefon Gen Asig' href='tel:+37361121115'>+373 61 121 115</a>
                     </div>
                     <span></span>
 
-                    <a href='/asigurari' className={`roundBtn btnTransition`} >Comandă acum</a>
+                    <a title='Asigurări' href='/asigurari' className={`roundBtn btnTransition`} >Comandă acum</a>
 
                 </section>
                 

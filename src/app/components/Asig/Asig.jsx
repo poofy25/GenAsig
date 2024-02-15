@@ -32,49 +32,49 @@ function Asig() {
     return ( 
         <section className={`${styles.asig} section`}>
             <h2>Asigurări</h2>
-            <p>Comparăm oferte de la majoritatea companiilor pentru a găsi asigurarea potrivită pentru dvs.</p>
+            <p>Descoperă consultanța și asistența noastră în asigurări. Oferim soluții personalizate pentru toate nevoile tale. Protejează-ți viitorul cu noi!</p>
             <section className={styles.asigsSection}>
-                <a data-aos="fade-right" href='/asigurari/medicala-peste-hotare'>
-                    <Image src={medicala} width='200' height='200'/>
+                <a data-aos="fade-right" title='Asigurare Medicala' href='/asigurari/medicala-peste-hotare'>
+                    <Image  alt='Asigurare Medicala' src={medicala} width='200' height='200'/>
                     <h3>Medicală peste hotare</h3>
                     <p>Pentru rezidenți, valabilă peste hotare.</p>
-                    <span>Comandă <Image src={navIcon}/> </span>
+                    <span>Comandă <Image alt='Navigheaza' src={navIcon}/> </span>
                 </a>
-                <a data-aos="fade-right" href='/asigurari/ipoteca'>
-                    <Image src={ipoteca} width='200' height='200'/>
+                <a data-aos="fade-right" title='Asigurare Ipoteca' href='/asigurari/ipoteca'>
+                    <Image alt='Asigurare Ipoteca' src={ipoteca} width='200' height='200'/>
                     <h3>Ipotecă</h3>
                     <p>Pentru ipotecă și bunuri imobile gajate.</p>
-                    <span>Comandă <Image src={navIcon}/> </span>
+                    <span>Comandă <Image alt='Navigheaza' src={navIcon}/> </span>
                 </a>
-                <a data-aos="fade-left" href='/asigurari/carte-verde'>
-                    <Image src={carteverde} width='100' height='100'/>
+                <a data-aos="fade-left" title='Asigurare Carte Verde' href='/asigurari/carte-verde'>
+                    <Image alt='Asigurare Carte Verde' src={carteverde} width='100' height='100'/>
                     <h3>Carte Verde</h3>
                     <p>Pentru vehicule înmatriculate în Moldova, valabilă peste hotare.</p>
-                    <span>Comandă <Image src={navIcon}/> </span>
+                    <span>Comandă <Image alt='Navigheaza' src={navIcon}/> </span>
                 </a>
-                <a data-aos="fade-left" href='/asigurari/accidente'>
-                    <Image src={accidente} width='200' height='200'/>
+                <a data-aos="fade-left" title='Asigurare Accidente' href='/asigurari/accidente'>
+                    <Image alt='Asigurare Accidente' src={accidente} width='200' height='200'/>
                     <h3>Accidente</h3>
                     <p>Siguranță financiară în cazul unor evenimente neașteptate.</p>
-                    <span>Comandă <Image src={navIcon}/> </span>
+                    <span>Comandă <Image alt='Navigheaza' src={navIcon}/> </span>
                 </a>
-                <a data-aos="fade-right" href='/asigurari/casco'>
-                    <Image src={casco} width='200' height='200'/>
+                <a data-aos="fade-right" title='Asigurare Casco' href='/asigurari/casco'>
+                    <Image alt='Asigurare Casco' src={casco} width='200' height='200'/>
                     <h3>Casco</h3>
                     <p>Protecție completă pentru vehiculul tău împotriva daunelor.</p>
-                    <span>Comandă <Image src={navIcon}/> </span>
+                    <span>Comandă <Image alt='Navigheaza' src={navIcon}/> </span>
                 </a>
-                <a data-aos="fade-up" href='/asigurari/vinieta'>
-                    <Image src={vinieta} width='200' height='200'/>
+                <a data-aos="fade-up" title='Asigurare Vinieta' href='/asigurari/vinieta'>
+                    <Image alt='Asigurare Vinieta' src={vinieta} width='200' height='200'/>
                     <h3>Vinietă</h3>
                     <p>Acoperire pentru taxele de drum, asigurându-ți conformitatea legală.</p>
-                    <span>Comandă <Image src={navIcon}/> </span>
+                    <span>Comandă <Image alt='Navigheaza' src={navIcon}/> </span>
                 </a>
-                <a data-aos="fade-left" href='/asigurari/rca'>
-                    <Image src={rca} width='200' height='200'/>
+                <a data-aos="fade-left" title='Asigurare RCA' href='/asigurari/rca'>
+                    <Image alt='Asigurare RCA' src={rca} width='200' height='200'/>
                     <h3>RCA</h3>
                     <p>Pentru vehicule înmatriculate în Moldova.</p>
-                    <span>Comandă <Image src={navIcon}/> </span>
+                    <span>Comandă <Image alt='Navigheaza' src={navIcon}/> </span>
                 </a>
                 
                 

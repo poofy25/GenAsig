@@ -8,13 +8,12 @@ function Hero() {
     return ( 
         <section className={`${styles.hero} section`}>
             <div className={styles.bgSvg}>
-                <Image src={heroBg}/>
+                <Image alt='Background blobs' src={heroBg}/>
             </div>
             <section>
-                <h1>Asigurări</h1>
-                <h2>Simplu. Rapid. Online.</h2>
-                <p>Primul service complet digital din Republica Moldova. Asigurările online sunt emise instant și semnate electronic</p>
-                <a href='/asigurari' className={`${styles.btn} btnTransition roundBtn`} >Comandă acum</a>
+                <h1>Asigurări Consultanță și Asistență</h1>
+                <p>Oferim soluții în asigurări și asistență specializată pentru toate nevoile tale.</p>
+                <a title='Asigurări' href='/asigurari' className={`${styles.btn} btnTransition roundBtn`} >Comandă acum</a>
             </section>
             <section style={{alignItems:'center', flex:'1'}}>
             <lord-icon

@@ -2,6 +2,7 @@
 
 
 import styles from './navBarMenu.module.scss'
+import instagram from '/public/assets/svgs/instagram.svg'
 
 
 import { useEffect } from 'react';
@@ -35,14 +36,17 @@ function NavBarMenu({status , setStatus}) {
 
             <section className={styles.menuContent}>
 
-            <a onClick={()=>{setStatus(!status)}}  href="/acasa">Acasă</a>
-            <a onClick={()=>{setStatus(!status)}}  href="/blog">Blog</a>
-            <a onClick={()=>{setStatus(!status)}} className={styles.lasta}  href="/contact">contact</a>
+            <a onClick={()=>{setStatus(!status)}} title='Pagina Principala' href="/">Acasă</a>
+            <a onClick={()=>{setStatus(!status)}} title='Asigurări'  href="/asigurari">Asigurări</a>
+            <a onClick={()=>{setStatus(!status)}} title='Contacte' className={styles.lasta}  href="/contact">Contact</a>
         
-            {/* <span>
-                <a target='_blank' href='https://www.facebook.com/finanko.md'><img alt='Facebook Logo' src={facebook}/></a>
-                <a target='_blank' href='https://www.instagram.com/finanko.md/'><img alt='Instagram Logo' src={instagram}/></a>
-            </span> */}
+            <a className={styles.notA} title='Telefon Gen Asig' href='tel:+37361 121 115'>+373 61 121 115 </a>
+            <a className={styles.notA} title='Email Gen Asig' href='mailto:genasig111@gmail.com'>genasig111@gmail.com</a>
+
+
+            <span>
+                <a target='_blank' href='https://www.instagram.com/gen.asig/'><Image width='48' height='48' alt='Instagram Logo' src={instagram}/></a>
+            </span>
 
             </section>
 

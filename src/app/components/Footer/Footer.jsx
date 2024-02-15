@@ -17,33 +17,33 @@ function Footer() {
                 </article>
                 <article>
                     <h3>ASIGURĂRI</h3>
-                    <a  href="/#acasa">Medicală peste hotare</a>
-                    <a  href="/#desprenoi">Ipotecă</a>
-                    <a  href="/#proiecte">Carte Verde</a>
-                    <a  href="/#servicii">Accidente</a>
-                    <a  href="/#parteneri">Casco</a>
-                    <a  href="/#contacte">Vinietă</a>
-                    <a  href="/#contacte">RCA</a>
+                    <a title='Asigurare Medicala' href="/asigurari/medicala-peste-hotare">Medicală peste hotare</a>
+                    <a title='Asigurare Ipotecă' href="/asigurari/ipoteca">Ipotecă</a>
+                    <a title='Asigurare Carte Verde' href="/asigurari/carte-verde">Carte Verde</a>
+                    <a title='Asigurare Accidente' href="/asigurari/accidente">Accidente</a>
+                    <a title='Asigurare Casco' href="/asigurari/casco">Casco</a>
+                    <a title='Asigurare Vinietă' href="/asigurari/vinieta">Vinietă</a>
+                    <a title='Asigurare RCA' href="/asigurari/rca">RCA</a>
 
                 </article>
                 <article>
                     <h3>TELEFON</h3>
-                    <a href='tel:+37361 121 115'>+373 61 121 115 </a>
+                    <a title='Telefon Gen Asig' href='tel:+37361 121 115'>+373 61 121 115 </a>
                     <h3>EMAIL</h3>
-                    <a href='mailto:genasig111@gmail.com'>genasig111@gmail.com</a>
+                    <a title='Email Gen Asig' href='mailto:genasig111@gmail.com'>genasig111@gmail.com</a>
                 </article>
                 <article>
                     <h3>URMAREȘTE-NE</h3>
-                    <a href='/' alt='Logo' className={styles.logo}><Image width='300' height='300' alt='Logo' src={logo}/></a>
+                    <a title='Pagina Principala' href='/' alt='Logo' className={styles.logo}><Image width='300' height='300' alt='Logo' src={logo}/></a>
                     <h3>SUNTEM ÎN REȚELELE SOCIALE</h3>
                     <span>
-                        <a  target='_blank' href='https://www.instagram.com/gen.asig/' className={styles.social}><Image width='100' height='100'  alt='Instagram Logo' src={instagram}/></a>
+                        <a title='Instagram Gen Asig'  target='_blank' href='https://www.instagram.com/gen.asig/' className={styles.social}><Image width='100' height='100'  alt='Instagram Logo' src={instagram}/></a>
                     </span>
                 </article>
             </section>
             <section className={styles.bottom}>
                 <p>© 2024 Gen Asig</p>
-                <a href='https://www.facebook.com/buzacristian25' target='_blank'>Website creat de Buza Cristian</a>
+                <a title='Facebook Dezvoltator Site' href='https://www.facebook.com/buzacristian25' target='_blank'>Website creat de Buza Cristian</a>
             </section>
         </footer>
      );

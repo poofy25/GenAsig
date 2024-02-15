@@ -17,7 +17,7 @@ export default function Asigurare({params}) {
         style={{
           background: `linear-gradient(10deg, ${currentAsig.color} 20%, #111111 100%)`}}
         >
-          <Image src={currentAsig?.imgPath} width='300' height='300'/>
+          <Image alt="Asigurare" src={currentAsig?.imgPath} width='300' height='300'/>
           <h2>{currentAsig.name}</h2>
           <p>{currentAsig.description}</p>
         </article>
