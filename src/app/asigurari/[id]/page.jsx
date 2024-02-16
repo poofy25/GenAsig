@@ -18,7 +18,7 @@ export default function Asigurare({params}) {
   useEffect(() => {
     AOS.init({
       duration: 1000, // Animation duration
-      once: false, // Animation only once
+      once: true, // Animation only once
     });
   }, []);
 
