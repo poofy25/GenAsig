@@ -43,6 +43,15 @@ export default function RootLayout({ children }) {
         {children}
         <Footer/>
         <Script src="https://cdn.lordicon.com/lordicon.js"></Script>
+        {/* <!-- Google tag (gtag.js) --> */}
+          <Script async src="https://www.googletagmanager.com/gtag/js?id=G-Q4500CTMC4"></Script>
+          <Script>
+            {`window.dataLayer = window.dataLayer || []
+            function gtag(){dataLayer.push(arguments)}
+            gtag('js', new Date());
+
+            gtag('config', 'G-Q4500CTMC4');`}
+          </Script>
       </body>
     </html>
   );
