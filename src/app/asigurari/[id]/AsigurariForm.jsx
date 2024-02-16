@@ -2,6 +2,13 @@
 
 import { useState } from 'react'
 import styles from './asigurariForm.module.scss'
+
+import { useEffect } from 'react'
+
+import 'aos/dist/aos.css';
+
+import AOS from 'aos';
+
 export default function AsigurariForm ({type})  {
 
     const [formType, setFormType] = useState(type)   
@@ -13,6 +20,14 @@ export default function AsigurariForm ({type})  {
     const [loading, setLoading] = useState(false)
     const [error, setError] = useState(null)
     const [success, setSuccess] = useState(null)
+
+
+    useEffect(() => {
+        AOS.init({
+          duration: 1000, // Animation duration
+          once: false, // Animation only once
+        });
+      }, []);
 
 
     const handleSubmit = async (e) => {
@@ -50,8 +65,7 @@ export default function AsigurariForm ({type})  {
     }
 
     return (
-        <>
-            <form onSubmit={handleSubmit} className={styles.form}>
+            <form data-aos="fade-up" onSubmit={handleSubmit} className={styles.form}>
                 <div className={styles.formHeader}><p>Trimite {formType==="Contact" ? "contactul tău" : "cerere"}</p></div>
 
                 <label >Nume, Prenume</label>
@@ -67,6 +81,5 @@ export default function AsigurariForm ({type})  {
                 {error && <div className='erorrBox'>{error}</div>}
                 {success && <div className='sucessBox'>Formularul a fost trimis cu succes!</div>}
             </form>
-        </>
     )
 }
